@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DAEB8"
+    android:backgroundTint="#988E8E"
+    android:backgroundTintMode="multiply"
+    android:padding="10dp"
+    android:paddingTop="10dp"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/btn2"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="5dp"
+        android:onClick="onClickSend2"
+        android:text="Add task" />
+
+    <EditText
+        android:id="@+id/edttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/btn2"
+        android:ems="10"
+        android:inputType="text" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/edttxt"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:backgroundTint="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edttxt"
+        android:layout_marginTop="25dp"
+        android:onClick="onClickSend"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
